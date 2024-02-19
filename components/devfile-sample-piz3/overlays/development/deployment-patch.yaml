@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-piz3
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0006-tenant/tkrw-pr712-0075-0006-app/devfile-sample-piz3@sha256:ccf8dea0d9598e36653d5ad203eacd6b716ba8a360ae32c1565ec3755997b452
+        name: my-nodejs
+        resources: {}
+status: {}
